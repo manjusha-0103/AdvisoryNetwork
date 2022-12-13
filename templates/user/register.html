@@ -1,0 +1,10 @@
+{% "advisor/register.html" %}
+
+{% block content %}
+    <form method = "POST">
+        {% csrf_token%}
+        {{form}}
+    </form>
+
+    if you have an account then do <a href = "login">login</a> instead.
+{% endblock %}

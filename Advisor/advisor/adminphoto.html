@@ -1,0 +1,28 @@
+<!--
+{% extends "advisor/advisorphoto.html" %}
+ 
+{% block content %}
+    <photo method = "GET">
+        {% csrf_token%}
+        {{photo}}
+    </photo>
+
+
+{% endblock %}
+-->
+
+<!DOCTYPE html>
+<html>
+
+   <head>
+      <title>Using Image in Webpage</title>
+   </head>
+	
+   <body>
+      <p>Simple Image Insert</p>
+      <photo method = "GET">
+      <img src = "/media/advisor_image" alt = "Test Image" />
+   </body>
+	
+</html>
+
